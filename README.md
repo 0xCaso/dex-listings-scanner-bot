@@ -10,7 +10,7 @@ const mnemonic = 'YOUR MNEMONIC PHRASE GOES HERE';
 ```
 7862412351:ABCdI2ujasdasguun38nuan8nin-512kjhi
 ```
-    and insert it on line 7 of app.js:
+and insert it on line 7 of app.js:
 ```
 const bot = new Telegraf('YOUR API TOKEN GOES HERE');
 ```
