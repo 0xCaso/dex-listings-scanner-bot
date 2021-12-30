@@ -1,6 +1,6 @@
 # Dex Listings Scanner - Telegram Bot
 This is a Telegram bot which will notify you whenever a new pair is added on your favourite DEXs. 
-[Image](screenshot.png)
+![Screenshot](screenshot.png)
 
 ## Description
 The script is listening for the event "PairCreated" emitted from the factory contract of the DEX. Whenever this happens, a log with all the info will be written into a text file, and a message to the bot will be sent.
