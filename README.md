@@ -1,5 +1,5 @@
 # Dex Listings Scanner - Telegram Bot
-This is a Telegram bot which will notify you whenever a new pair is added on your favouirte DEXs. 
+This is a Telegram bot which will notify you whenever a new pair is added on your favourite DEXs. 
 
 ## Description
 The script is listening for the event "PairCreated" emitted from the factory contract of the DEX. Whenever this happens, a log with all the info will be written into a text file, and a message to the bot will be sent.
@@ -15,11 +15,11 @@ const mnemonic = 'YOUR MNEMONIC PHRASE GOES HERE';
 ```
 const bot = new Telegraf('YOUR API TOKEN GOES HERE');
 ```
-3. Add a directory inside the project called "logs", then run the script with
+3. Add a directory called "logs" inside the project, then run the script with
 ```
 node app.js
 ```
-and then activate the bot sending it /start.
+and then activate the bot sending "/start" in the chat.
 
 4. If you want to add a DEX you want to scan, you have 3 things to do:
 - Create an object with DEX factory contract address, URL RPC of its blockchain and its name. Example:
