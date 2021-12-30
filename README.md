@@ -15,7 +15,7 @@ const mnemonic = 'YOUR MNEMONIC PHRASE GOES HERE';
 ```
 const bot = new Telegraf('YOUR API TOKEN GOES HERE');
 ```
-3. Run the script with
+3. Add a directory inside the project called "logs", then run the script with
 ```
 node app.js
 ```
