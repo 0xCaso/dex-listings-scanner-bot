@@ -18,8 +18,8 @@ const bot = new Telegraf('YOUR API TOKEN GOES HERE');
 3. Run the script with
 ```
 node app.js
-```
-and then activate the bot sending it /start.
+``` and then activate the bot sending it /start.
+
 4. If you want to add a DEX you want to scan, you have 3 things to do:
 - Create an object with DEX factory contract address, URL RPC of its blockchain and its name. Example:
 ```
