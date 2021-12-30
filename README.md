@@ -1,5 +1,6 @@
 # Dex Listings Scanner - Telegram Bot
-This is a Telegram bot which will notify you whenever a new pair is added on your favourite DEXs. 
+This is a Telegram bot which will notify you whenever a new pair is added on your favourite DEXs.
+
 ![Screenshot](screenshot.png)
 
 ## Description
