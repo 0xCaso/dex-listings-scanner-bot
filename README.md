@@ -15,7 +15,12 @@ const mnemonic = 'YOUR MNEMONIC PHRASE GOES HERE';
 ```
 const bot = new Telegraf('YOUR API TOKEN GOES HERE');
 ```
-3. If you want to add a DEX you want to scan, you have 3 things to do:
+3. Run the script with
+```
+node app.js
+```
+and then activate the bot sending it /start.
+4. If you want to add a DEX you want to scan, you have 3 things to do:
 - Create an object with DEX factory contract address, URL RPC of its blockchain and its name. Example:
 ```
 const traderjoe = {
@@ -37,6 +42,6 @@ traderjoeFactory.on('PairCreated', async (_token0, _token1, _pairAddress) => {
 
 ## Find the factory address of the DEX and the URL RPC of the blockchain
 #### Address
-Let's say you know the DEX you want to add. To find the address, usually you can just go to its docs and you'll probably find a section with all the contracts addresses listed. Example: [Trader Joe Docs](docs.traderjoexyz.com/main/the-project/contracts).
+Let's say you know the DEX you want to add. To find the address, usually you can just go to its docs and you'll probably find a section with all the contracts addresses listed. Example: [Trader Joe Docs](https://docs.traderjoexyz.com/main/the-project/contracts).
 #### URL RPC
 If you have already add the blockchain on Metamask, you can go to select a network, then go to "Add Network". Press "Cancel" and then you'll find "New RPC URL".
