@@ -26,20 +26,20 @@ const tethys = {
 
 const trisolaris = {
 	address: '0xc66F594268041dB60507F00703b152492fb176E7',
-    rpcLink: 'https://mainnet.aurora.dev/Fon6fPMs5rCdJc4mxX4kiSK1vsKdzc3D8k6UF8aruek',
-    dex: 'Trisolaris'
+  rpcLink: 'https://mainnet.aurora.dev/Fon6fPMs5rCdJc4mxX4kiSK1vsKdzc3D8k6UF8aruek',
+  dex: 'Trisolaris'
 };
 
 const fuseswap = {
 	address: '0x1d1f1A7280D67246665Bb196F38553b469294f3a',
-    rpcLink: 'https://rpc.fuse.io',
-    dex: 'Fuseswap'
+  rpcLink: 'https://rpc.fuse.io',
+  dex: 'Fuseswap'
 };
 
 const traderjoe = {
 	address: '0x9Ad6C38BE94206cA50bb0d90783181662f0Cfa10',
-    rpcLink: 'https://api.avax.network/ext/bc/C/rpc',
-    dex: 'TraderJoe'
+  rpcLink: 'https://api.avax.network/ext/bc/C/rpc',
+  dex: 'TraderJoe'
 };
 
 /*
@@ -55,16 +55,16 @@ const fuseswapFactory = buildContract(fuseswap.address, fuseswap.rpcLink);
 const traderjoeFactory = buildContract(traderjoe.address, traderjoe.rpcLink);
 
 /*
-	=============================================
-	STARTING BOT - NO NEED TO MODIFY
-	=============================================
+	============
+	STARTING BOT
+	============
 */
 
 bot.start((context) => {
 	/*
-		=====================================================================
-		LISTENING ON EVERY CONTRACT'S PAIR CREATION EVENT - NO NEED TO MODIFY
-		=====================================================================
+		============================================================================
+		LISTENING ON EVERY CONTRACT'S PAIR CREATION EVENT - ADD LISTENING EVENT HERE
+		============================================================================
 	*/
 	console.log('Bot started.')
 	context.reply('Scanning your favourite dexs...')
@@ -93,13 +93,11 @@ bot.start((context) => {
 bot.launch()
 
 /*
-	=============
-	=============
-
-	AUX FUNCTIONS
-
-	=============
-	=============
+	=========================
+	=========================
+	====  AUX FUNCTIONS  ====
+	=========================
+	=========================
 */
 
 function buildContract(_address, _rpcLink) {
